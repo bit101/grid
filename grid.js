@@ -363,8 +363,8 @@
 				context.moveTo(x, i + res / 2);
 				context.lineTo(x + cos45 * max, i + res / 2 + sin45 * max);
 				maxX = Math.ceil(w / res) * res + x;
-				context.moveTo(maxX, i + res / 2);
-				context.lineTo(maxX + cos135 * max, i + res / 2 + sin135 * max);
+				context.moveTo(maxX, i + res * 1.5);
+				context.lineTo(maxX + cos135 * max, i + res * 1.5 + sin135 * max);
 			}
 			context.stroke();
 			this._postDraw(context);
