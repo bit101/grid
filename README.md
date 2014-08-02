@@ -27,3 +27,19 @@ A library for drawing various types of grids on HTML5's Canvas. Here are the fun
 	diamond(context, x, y, w, h, res) // draws a grid of diamonds.
 
 	celtic(context, x, y, w, h, res) // draws a square grid overlayed with a diamond grid. useful for drawing celtic knot patterns.
+
+Properties: These affect how the grid is drawn - line width, color, dot size. The major properties affect lines/dots drawn at the major resolution, minor affects the minor resolution, and third, the third resolution.
+
+	majorLineWidth
+	majorStrokeStyle
+	majorDotSize
+	majorFillStyle
+
+	minorLineWidth
+	minorStrokeStyle
+	minorDotSize
+	minorFillStyle
+
+	thirdLineWidth
+	thirdStrokeStyle
+
