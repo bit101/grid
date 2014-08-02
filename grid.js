@@ -320,13 +320,12 @@
 			}
 			var dy = sin60 * res,
 				maxX = Math.ceil(w / res) * res + x;
-			for(i = y; i <= y + h; i += dy * 2) {
-				context.moveTo(x, i - dy);
-				context.lineTo(x + w, i - dy);
-
+			for(i = y; i <= y + h; i += dy) {
 				context.moveTo(x, i);
 				context.lineTo(x + w, i);
+			}
 
+			for(i = y + dy * 2; i <= y + h; i += dy * 2) {
 				if(i > 0) {
 					context.moveTo(x, i);
 					context.lineTo(x + cos60 * max, i + sin60 * max);
