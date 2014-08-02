@@ -43,3 +43,4 @@ Properties: These affect how the grid is drawn - line width, color, dot size. Th
 	thirdLineWidth
 	thirdStrokeStyle
 
+![All demos](demo.png)
